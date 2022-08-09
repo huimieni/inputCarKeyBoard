@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingTop="18dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="18dp"
+            android:text="取消"
+            android:textColor="@color/color_333"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车牌号"
+            android:textColor="@color/color_333"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cancel" />
+
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:paddingStart="19.5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="19.5dp"
+            android:paddingBottom="5dp"
+            android:text="确定"
+            android:textColor="@color/color_333"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cancel" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_333"
+            app:layout_constraintBottom_toBottomOf="@+id/cancel" />
+
+        <com.widget.carkeyboard.view.InputView
+            android:id="@+id/car_no"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="22dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancel"
+            app:pwkEnergyLabelVisible="visible"
+            app:pwkEnergySelectedDrawable="@drawable/ic_car_energy_bg_selected"
+            app:pwkEnergyTextColor="#5FC05F"
+            app:pwkEnergyUnSelectedDrawable="@drawable/ic_car_energy_bg_selected"
+            app:pwkInputTextSize="16sp"
+            app:pwkItemPadding="2dp"
+            app:pwkItemSelectedDrawable="@drawable/r5_line_cm"
+            app:pwkItemUnSelectedDrawable="@drawable/r5_line_cm"
+            app:pwkProvinceSelectedDrawable="@drawable/r5_line_cm"
+            app:pwkProvinceTextColor="@color/color_333"
+            app:pwkProvinceUnSelectedDrawable="@drawable/r5_line_cm" />
+
+
+        <com.widget.carkeyboard.view.KeyboardView
+            android:id="@+id/kbv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="22dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car_no" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

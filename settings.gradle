@@ -1,0 +1,3 @@
+rootProject.name='view-carkeyboard'
+include ':app'
+include ':carkeyboardlibrary'
